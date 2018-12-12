@@ -19,3 +19,15 @@ var twoSum = function(nums, target) {
 };
 
 // Another Solution
+
+// const twoSum = function(nums, target) {
+    // let temp = [];
+    // for (let i = 0; i < nums.length; i++) {
+    //     if (temp[target - nums[i]] !== undefined) {
+    //         return [temp[target - nums[i]], i];
+    //     }
+    //     if (temp[nums[i]] === undefined) {
+    //         temp[nums[i]] = i;
+    //     }
+    // }
+// };
