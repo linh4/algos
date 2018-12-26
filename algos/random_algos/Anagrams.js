@@ -24,3 +24,5 @@ function anagrams(str1, str2) {
   }
   return true
 }
+
+anagrams('cinema', 'iceman')
