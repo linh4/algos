@@ -2,7 +2,7 @@
 // The function should find the first pair where the sum is 0.
 // Return the array that includes both values that sum to zero or undefined if a pair does not exist
 
-// use multiple pointers pattern
+// use multiple pointers pattern, point to the left and right
 // Time complexity: O(n)
 // Space complexity: O(1)
 

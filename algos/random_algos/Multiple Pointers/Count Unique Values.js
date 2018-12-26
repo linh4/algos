@@ -1,7 +1,10 @@
 // Write a function which accepts a sorted array, and counts the unique values in the array.
 // There can be negative numbers in the array, but it will always be sorted.
 
+// time complexity: O(n)
+
 function countUniqueValues(arr) {
+  if (arr.length === 0) return 0
   let i = 0
   // loop from the next element
   for (let j = 1; j < arr.length; j++) {
