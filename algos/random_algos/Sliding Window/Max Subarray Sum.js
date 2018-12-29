@@ -4,7 +4,7 @@
 // sliding window: add and substract
 // time complexity: O(n)
 
-ffunction maxSubarraySum(arr, num) {
+function maxSubarraySum(arr, num) {
   let maxSum = 0
   let tempSum = 0
   if (arr.length < num) return null
