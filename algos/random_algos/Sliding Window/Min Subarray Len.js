@@ -3,7 +3,7 @@
 // If there isn't one, return 0 instead.
 
 // time: O(n)
-// spcae: O(1)
+// space: O(1)
 
 function minSubArrayLen(nums, sum) {
   let total = 0
