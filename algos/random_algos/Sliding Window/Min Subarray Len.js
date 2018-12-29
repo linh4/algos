@@ -2,6 +2,9 @@
 // This function returns the minimal length of a contiguous subarray of which the sum is greater than or equal to the integer passed the function.
 // If there isn't one, return 0 instead.
 
+// time: O(n)
+// space: O(1)
+
 function minSubArrayLen(nums, sum) {
   let total = 0
   let start = 0
