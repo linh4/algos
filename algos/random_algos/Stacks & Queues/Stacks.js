@@ -30,7 +30,7 @@ class Stacks {
       this.last = null
     }
     this.first = this.first.next
-    this.size--
+    this.length--
     return temp.val
   }
 }
