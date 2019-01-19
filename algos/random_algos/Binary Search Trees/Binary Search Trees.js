@@ -65,19 +65,65 @@ class BinarySearchTree {
         }
         return false;
     }
+    BFS(){
+      let node = this.root
+      let queue = []
+      let data = []
+      queue.push(node)
+      while(queue.length){
+        node = queue.shift()
+        data.push(node.val)
+        if (node.left) queue.push(node.left)
+        if (node.right) queue.push(node.right)
+      }
+      return data
+    }
+    DFSPreOrder(){
+      let data = []
+      function traverse(node) {
+        data.push(node.val)
+        if (node.left) traverse(node.left)
+        if (node.right) traverse(node.right)
+      }
+      traverse(this.root)
+      return data
+    }
+    DFSPostOrder(){
+      let data = []
+      function traverse(node) {
+        if (node.left) traverse(node.left)
+        if (node.right) traverse(node.right)
+        data.push(node.val)
+      }
+      traverse(this.root)
+      return data
+    }
+    DFSInOrder(){
+      let data = []
+      function traverse(node) {
+        node.left && traverse(node.left)
+        data.push(node.val)
+        node.right && traverse(node.right)
+      }
+      traverse(this.root)
+      return data
+    }
 }
 
+
+//queue: [20]
+// data: []
+// result: [20,10,23,4,11,29]
 
 //      20
 //  10     23
 // 4  11     29
-//   7
 
 let tree = new BinarySearchTree();
 tree.insert(20)
 tree.insert(10)
 tree.insert(4)
 tree.insert(11)
-tree.insert(7)
 tree.insert(23)
 tree.insert(29)
+tree.BFS()
