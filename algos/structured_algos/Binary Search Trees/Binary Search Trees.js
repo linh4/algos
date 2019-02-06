@@ -119,11 +119,13 @@ class BinarySearchTree {
 //  10     23
 // 4  11     29
 
-let tree = new BinarySearchTree();
-tree.insert(20)
-tree.insert(10)
-tree.insert(4)
-tree.insert(11)
-tree.insert(23)
-tree.insert(29)
-tree.BFS()
+// let tree = new BinarySearchTree();
+// tree.insert(20)
+// tree.insert(10)
+// tree.insert(4)
+// tree.insert(11)
+// tree.insert(23)
+// tree.insert(29)
+// tree.BFS()
+
+module.exports = { Node, BinarySearchTree }

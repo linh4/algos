@@ -1,7 +1,7 @@
 // Write a function which accepts an array of strings.
 // Capitalize the first letter of each string in the array.
 
-function capitalizeFirst (array) {
+function capitalizeFirst(array) {
   if (array.length === 1) {
     return [array[0][0].toUpperCase() + array[0].substr(1)]
   }
@@ -25,4 +25,7 @@ function capitalizedWords (arr) {
 }
 
 let words = ['i', 'am', 'learning', 'recursion'];
-capitalizedWords(words); // ['I', 'AM', 'LEARNING', 'RECURSION']
+capitalizedWords(words);
+// ['I', 'AM', 'LEARNING', 'RECURSION']
+
+module.exports = { capitalizeFirst, capitalizedWords }

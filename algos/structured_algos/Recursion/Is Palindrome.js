@@ -18,3 +18,5 @@ function isPalindrome(str){
 //   return reverse(str.slice(1)) + str[0];
 // }
 // reverse('awesome') // 'emosewa'
+
+module.exports = isPalindrome

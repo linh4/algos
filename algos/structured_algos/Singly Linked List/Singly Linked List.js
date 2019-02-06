@@ -132,7 +132,9 @@ class SinglyLinkedList {
   }
 }
 
-let list = new SinglyLinkedList()
-list.push('hi')
-list.push('hy')
-list.push('he')
+// let list = new SinglyLinkedList()
+// list.push('hi')
+// list.push('hy')
+// list.push('he')
+
+module.exports = { Node, SinglyLinkedList }

@@ -9,3 +9,5 @@ function fib(n){
 // fib(10) // 55
 // fib(28) // 317811
 // fib(35) // 9227465
+
+module.exports = fib
